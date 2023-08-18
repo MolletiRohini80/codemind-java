@@ -1,30 +1,15 @@
 import java.util.Scanner;
-public class Reverse
-{
-    public static void main(String args[])
-    {
-        int n,rev=0,r,a;
+public class uu{
+    public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        n=sc.nextInt();
-        if(n<0)
-        {
-           while(n<0)
-            {
-                r=n%10;
-                rev=rev*10+r;
-                n=n/10;
-            }
-            System.out.print(rev);        }
-        else
-        {
-            while(n>0)
-            {
-                r=n%10;
-                rev=rev*10+r;
-                n=n/10;
-            }
-            System.out.print(rev);
+        int n=sc.nextInt();
+        int q=n;
+        int r,s=0;
+        while(q!=0){
+            r=q%10;
+            q=q/10;
+            s=s*10+r;
         }
-        
+            System.out.printf("%d",s);
     }
 }
